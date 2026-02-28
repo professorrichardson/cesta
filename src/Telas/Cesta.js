@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Text,Image, Dimensions,StyleSheet,View } from "react-native";
+import Texto from "../componentes/Texto";
 
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
@@ -13,20 +14,21 @@ export default function Cesta(){
     return<>
         <Image source={topo} style={estilos.topo} />
 
-        <Text style={estilos.titulo}>Detalhes da cesta</Text>
-        <Text style={estilos.nome}>Cesta de verduras</Text>
-
+        <Texto style={estilos.titulo}>Detalhes da cesta</Texto>
+       
+   <View style={estilos.cesta}>
+       <Texto style={estilos.nome}>Cesta de verduras</Texto> 
         <View style={estilos.fazenda}>
         <Image source={logo} style={estilos.imagenFazenda}/>
-        <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
+        <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
         </View>
 
-        <Text style={estilos.descricao}>Uma cesta com produtos selecionados
+        <Texto style={estilos.descricao}>Uma cesta com produtos selecionados
                cuidadosamente da fazenda direto para 
                sua cozinha.
-        </Text>
-        <Text style={estilos.preco}>R$: 40,00</Text>
-        
+        </Texto>
+        <Texto style={estilos.preco}>R$: 40,00</Texto>
+    </View>
     
     </>
 }
@@ -54,7 +56,8 @@ nome:{
     color:"#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontFamily:"MontserratBold",
+    fontWeight:'bold'
+   
 },
 fazenda:{
     flexDirection:"row",
@@ -67,7 +70,7 @@ imagenFazenda:{
 nomeFazenda:{
     fontSize: 16,
     lineHeight: 26,
-    fontFamily:"MontserratRegular",
+    
 },
 descricao:{
     color:"#A3A3A3",
