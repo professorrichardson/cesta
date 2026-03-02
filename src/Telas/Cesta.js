@@ -16,6 +16,7 @@ export default function Cesta(){
 
         <View style={estilos.fazenda}>
         <Image source={logo} style={estilos.imagenFazenda}/>
+
         <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
         </View>
 
@@ -52,7 +53,7 @@ nome:{
     color:"#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontWeight:"bold"
+    fontFamily:"MontserratBold",
 },
 fazenda:{
     flexDirection:"row",
@@ -65,6 +66,7 @@ imagenFazenda:{
 nomeFazenda:{
     fontSize: 16,
     lineHeight: 26,
+    fontFamily:"MontserratRegular",
 },
 descricao:{
     color:"#A3A3A3",
