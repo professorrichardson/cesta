@@ -6,7 +6,6 @@ import Texto from "../componentes/Texto";
 
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
-import TEXTO from "../componentes/Texto";
 
 //const width1= Dimensions.get('screen').width;
 
@@ -15,22 +14,14 @@ export default function Cesta(){
     return<>
         <Image source={topo} style={estilos.topo} />
 
-<<<<<<< HEAD
         <Texto style={estilos.titulo}>Detalhes da cesta</Texto>
        
    <View style={estilos.cesta}>
        <Texto style={estilos.nome}>Cesta de verduras</Texto> 
-=======
-        <Text style={estilos.titulo}>Detalhes da cesta</Text>
-        
-        <TEXTO style={estilos.nome}>Cesta de verduras</TEXTO>
-
->>>>>>> f1bd8d4e06c52551451d8f12995d07e85b51a897
         <View style={estilos.fazenda}>
         <Image source={logo} style={estilos.imagenFazenda}/>
 
-        <TEXTO style={estilos.nomeFazenda}>Jenny Jack Farm</TEXTO>
-
+        <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
         </View>
 
         <Texto style={estilos.descricao}>Uma cesta com produtos selecionados
@@ -46,11 +37,7 @@ export default function Cesta(){
 const estilos = StyleSheet.create({
 topo:{
     width:"100%",
-<<<<<<< HEAD
     //height: 578 / 768 * width1
-=======
-   // height: 578 / 768 * width
->>>>>>> f1bd8d4e06c52551451d8f12995d07e85b51a897
 },
 titulo:{
     width:"100%",
@@ -70,7 +57,6 @@ nome:{
     color:"#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontWeight:"bold",
     fontFamily:"MontserratBold",
 },
 fazenda:{
@@ -84,7 +70,6 @@ imagenFazenda:{
 nomeFazenda:{
     fontSize: 16,
     lineHeight: 26,
-    fontWeight:"regular",
     fontFamily:"MontserratRegular",
 },
 descricao:{
