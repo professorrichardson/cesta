@@ -20,7 +20,8 @@ export default function Cesta(){
        <Texto style={estilos.nome}>Cesta de verduras</Texto> 
         <View style={estilos.fazenda}>
         <Image source={logo} style={estilos.imagenFazenda}/>
-        <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
+
+        <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
         </View>
 
         <Texto style={estilos.descricao}>Uma cesta com produtos selecionados
@@ -56,8 +57,7 @@ nome:{
     color:"#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontWeight:'bold'
-   
+    fontFamily:"MontserratBold",
 },
 fazenda:{
     flexDirection:"row",
@@ -70,7 +70,7 @@ imagenFazenda:{
 nomeFazenda:{
     fontSize: 16,
     lineHeight: 26,
-    
+    fontFamily:"MontserratRegular",
 },
 descricao:{
     color:"#A3A3A3",

@@ -1,24 +1,24 @@
 import {View } from 'react-native';
-import { SafeAreaView } from 'react-native-web';
 import Cesta from './src/Telas/Cesta';
+import { SafeAreaView } from 'react-native-web';
 import { 
-    useFonts,
-    Montserrat_400Regular,
-    Montserrat_700Bold 
-  } from '@expo-google-fonts/montserrat';
-
+        useFonts,
+        Montserrat_400Regular,
+        Montserrat_700Bold 
+      } from '@expo-google-fonts/montserrat';
 
 
 export default function App() {
-const [fonteCarregada] = useFonts({
+const [fontCarregada] = useFonts({
   "MontserratRegular": Montserrat_400Regular,
   "MontserratBold": Montserrat_700Bold
 });
 
-if (!fonteCarregada){
-  return <View />
+if(!fontCarregada){
+  return<h1> Não carregou</h1>
 }
-  return (
+
+return (
     <SafeAreaView>
     <Cesta />
 
