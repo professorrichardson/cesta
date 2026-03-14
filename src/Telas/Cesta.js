@@ -7,7 +7,7 @@ import Texto from "../componentes/Texto";
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
 
-//const width1= Dimensions.get('screen').width;
+const width= Dimensions.get('screen').width;
 
 
 export default function Cesta(){
@@ -37,7 +37,7 @@ export default function Cesta(){
 const estilos = StyleSheet.create({
 topo:{
     width:"100%",
-    //height: 578 / 768 * width1
+    height: 578 / 768 * width
 },
 titulo:{
     width:"100%",
@@ -57,7 +57,7 @@ nome:{
     color:"#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontFamily:"MontserratBold",
+    fontWeight:"bold",
 },
 fazenda:{
     flexDirection:"row",
@@ -70,7 +70,6 @@ imagenFazenda:{
 nomeFazenda:{
     fontSize: 16,
     lineHeight: 26,
-    fontFamily:"MontserratRegular",
 },
 descricao:{
     color:"#A3A3A3",
