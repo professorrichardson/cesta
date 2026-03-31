@@ -1,6 +1,7 @@
 import { Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Cesta from './src/Telas/Cesta';
+import mock from "./src/mocks/cesta";
 
 import { 
   useFonts,
@@ -21,7 +22,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={{flex:1}}>
-      <Cesta />
+      <Cesta {...mock} />
     </SafeAreaView>
   );
 }
